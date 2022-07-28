@@ -32,9 +32,10 @@ function showTreatment(treatments) {
     var text =
       `<div class="container p-2">
         <div class="card">
-          <div class="row">
+          <div class="row text-center">
             <div class="col-md-12">
               <h6 class="mb-0">${name}</h6>
+              <hr/>
             </div>
           </div>
           <div class="row">
@@ -57,7 +58,7 @@ function showMedicines(medicines) {
     var text =
       `<div class="container p-2">
         <div class="card">
-          <div class="row">
+          <div class="row text-center">
             <div class="col-md-12">
               <h6 class="mb-0">${name}</h6>
             </div>
