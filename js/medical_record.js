@@ -173,8 +173,8 @@ function showMedicalTests(tests) {
           <div class="row">
             <div class="col-md-12 m-2">
               <div class="card-body">
-                < a href = "${server + downloadUrl}"
-                download type = "application/octet-stream" > Download test < /a>
+                <a href = "${server + downloadUrl}"
+                download type = "application/octet-stream"> Download test </a>
               </div>
           </div>
         </div>
