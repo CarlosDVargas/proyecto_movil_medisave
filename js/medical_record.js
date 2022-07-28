@@ -142,7 +142,7 @@ function showMedicalTests(tests) {
     var doctorName = test.doctorName;
     var creationDate = new Date(test.creationDate);
     var desc = test.description;
-    var server = "https://localhost:44392/"
+    var server = "http://carlosdvargas-001-site1.itempurl.com/"
     var downloadUrl = test.fileUrl;
     var text =
       `<div class="container p-2">
