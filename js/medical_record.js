@@ -26,13 +26,41 @@ function showTreatment(treatments) {
   treatments.forEach(treatments => {
     var name = treatments.name;
     var desc = treatments.description;
-    $(".treatments").append(name, desc);
+    var text =
+      `<div class="container p-2">
+        <div class="card">
+          <div class="row">
+            <div class="col-md-12">
+              <h6 class="mb-0">${name}</h6>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card-body">
+                <p>${desc}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>`;
+    $(".treatments").append(text);
   });
 }
+
 
 function showMedicines(medicines) {
   medicines.forEach(medicines => {
     var name = medicines.name;
-    $(".medicines").append(name);
+    var text =
+      `<div class="container p-2">
+        <div class="card">
+          <div class="row">
+            <div class="col-md-12">
+              <h6 class="mb-0">${name}</h6>
+            </div>
+          </div>
+        </div>
+      </div>`;
+    $(".medicines").append(text);
   });
 }
