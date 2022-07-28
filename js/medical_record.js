@@ -10,11 +10,16 @@ $(document).ready(function () {
     success: function (info) {
       medicalRecord = info.data;
       user = medicalRecord.applicationUser;
+      var illnesses = medicalRecord.illnesses;
       $('#patientName').text(user.dni + " - " + user.name)
       console.log(medicalRecord);
+      illnesses.forEach(illness => {
+        var illnessName = illness.name;
+        var illnessDescription = illness.description;
+        $("#example").append(illnessName, illnessDescription);
+      });
     }
   });
 
 });
-
 
