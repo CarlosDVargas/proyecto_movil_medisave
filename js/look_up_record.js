@@ -1,7 +1,7 @@
 $('#submit').click(function () {
   var identifier = $('#identifier').val();
   $.ajax({
-    url: "https://localhost:44392/Admin/Record/Get?userId=" + identifier,
+    url: "http://carlosdvargas-001-site1.itempurl.com/Admin/Record/Get?userId=" + identifier,
     type: "GET",
     dataType: "json",
     success: function (info) {

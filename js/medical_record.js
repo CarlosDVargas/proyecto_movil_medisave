@@ -4,7 +4,7 @@ var user;
 $(document).ready(function () {
   const userId = window.location.search.split("?userId=")[1];
   $.ajax({
-    url: "https://localhost:44392/Admin/Record/Get?userId=" + userId,
+    url: "http://carlosdvargas-001-site1.itempurl.com/Admin/Record/Get?userId=" + userId,
     type: "GET",
     dataType: "json",
     success: function (info) {
